@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="d-block hidden">
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">widget</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Link</a>
@@ -54,10 +54,87 @@
         </nav>
     </header>
 
+    <main class="mt-5">
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="col-4 border">
+                    <!-- Widget Tabs -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="nav-tab">
+                          <button class="nav-link active" id="widget-tab" data-bs-toggle="tab" data-bs-target="#widget-tab-pane" type="button" role="tab" aria-controls="widget-tab-pane" aria-selected="true">Widgets</button>
+                        </li>
+                        <li class="nav-item" role="nav-tab">
+                          <button class="nav-link" id="component-tab" data-bs-toggle="tab" data-bs-target="#component-tab-pane" type="button" role="tab" aria-controls="component-tab-pane" aria-selected="false">Component</button>
+                        </li>
+                    </ul>
+                    <!-- End Widget Tabs -->
+                    <!-- Contact Tabs -->
+                    <div class="tab-content accordion" id="myTabContent">
+                        <div class="tab-pane fade show active accordion-item" id="widget-tab-pane" role="tabpanel" aria-labelledby="widget-tab" tabindex="0">
+                            <div class="group-list p-3 d-flex flex-column ">
+                                <div class="group-list-item handle">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/enjamul.jpg" class="card-img-top" alt="">
+                                        <button type="button" class="btn btn-primary position-relative">
+                                            Now Available
+                                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                                              <span class="visually-hidden">New alerts</span>
+                                            </span>
+                                        </button>
+                                        <div class="card-body">
+                                            <h3>Enjamul Islam</h3>
+                                            <p>Web Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Widget Item -->
+                                <div class="group-list-item border p-3 mt-3">
+                                    <div class="py-2">
+                                        <label class="pb-2">Web Design</label>
+                                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped" style="width: 80%">80%</div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <label class="pb-2">UI Design</label>
+                                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped" style="width: 60%">60%</div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <label class="pb-2">Web Development</label>
+                                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped" style="width: 50%">50%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                      
+                        </div>
+                        <!-- End Widget -->
+                        <div class="tab-pane fade accordion-item" id="component-tab-pane" role="tabpanel" aria-labelledby="component-tab" tabindex="0">
+                          
+                        </div>
+                        <!-- End Component -->
+                    </div>
+                </div>
+                <!-- End Left Side -->
+                <div class="col-8"></div>
+                <!-- End Right Side -->
+            </div>
+        </div>
+    </main>
 
 
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sortable JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"></script>
 
     
 </body>
